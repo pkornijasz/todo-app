@@ -27,7 +27,7 @@ public class ProjectStep {
         this.id = id;
     }
 
-    String getDescription() {
+    public String getDescription() {
         return description;
     }
 
