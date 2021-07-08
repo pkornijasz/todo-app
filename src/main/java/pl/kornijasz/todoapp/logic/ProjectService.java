@@ -1,6 +1,5 @@
 package pl.kornijasz.todoapp.logic;
 
-import org.springframework.stereotype.Service;
 import pl.kornijasz.todoapp.TaskConfigurationProperties;
 import pl.kornijasz.todoapp.model.*;
 import pl.kornijasz.todoapp.model.projection.GroupReadModel;
@@ -9,7 +8,6 @@ import java.time.LocalDateTime;
 import java.util.List;
 import java.util.stream.Collectors;
 
-@Service
 public class ProjectService {
 
     private final ProjectRepository repository;

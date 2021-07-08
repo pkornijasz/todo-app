@@ -2,6 +2,7 @@ package pl.kornijasz.todoapp.controller;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.transaction.annotation.Transactional;
@@ -18,7 +19,7 @@ class TaskController {
     private static final Logger logger = LoggerFactory.getLogger(TaskController.class);
     private final TaskRepository repository;
 
-    public TaskController(TaskRepository repository) {
+    TaskController(@Lazy final TaskRepository repository) {
         this.repository = repository;
     }
 

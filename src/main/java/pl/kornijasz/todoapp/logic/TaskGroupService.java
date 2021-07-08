@@ -11,8 +11,6 @@ import pl.kornijasz.todoapp.model.projection.GroupWriteModel;
 import java.util.List;
 import java.util.stream.Collectors;
 
-@Service
-@RequestScope
 public class TaskGroupService {
     private final TaskGroupRepository repository;
     private final TaskRepository taskRepository;
